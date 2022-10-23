@@ -1,0 +1,67 @@
+class MyQueue:
+    def __init__(self):
+        self.items = []
+
+    def is_empty(self):
+        return len(self.items) == 0
+
+    def enqueue(self, item):
+        self.items.append(item)
+
+    def dequeue(self):
+        return self.items.pop(0)
+
+    def size(self):
+        return len(self.items)
+
+    def peek(self):
+        if self.is_empty():
+            raise Exception("Empty list")
+        return self.items[0]
+
+
+bikes = MyQueue()
+bikes.size()
+bikes.enqueue('Gazelle')
+bikes.enqueue('Batavus')
+bikes.enqueue('Union')
+bikes.enqueue('Sparta')
+print(bikes.size())
+slice = bikes.items[::-1]
+print(slice)
+
+a, b, c, d = bikes.items
+print('a: ' + a)
+
+print('---')
+print(bikes.__dir__())
+
+lijst = [x*2 for x in range(20)]
+print(lijst)
+
+
+
+class MyStack:
+    def __init__(self):
+        self.stack = []
+
+    def push(self, data):
+        self.stack.append(data)
+
+    def pop(self):
+        if self.is_empty():
+            raise Exception("Empty stack")
+
+        return self.stack.pop(len(self.stack) - 1)
+
+    def is_empty(self):
+        return len(self.stack) == 0
+
+    def peek(self):
+        if self.is_empty():
+            raise Exception("Empty stack")
+
+        return self.stack[len(self.stack) - 1]
+
+    def size(self):
+        return len(self.stack)
