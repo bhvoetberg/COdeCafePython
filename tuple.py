@@ -21,3 +21,17 @@ print(type(mini_tuple))
 #met slicing en reassign wel 'veranderlijk'
 y = y[2:-1] #nieuwe y wordt oorspronkelijke y vanaf index 2 tot voorlaatste element
 print(y)
+
+
+
+integers = [1, 2, 3]
+letters = ["a", "b", "c"]
+floats = [4.0, 5.0, 6.0]
+
+for i, l, f in zip(integers, letters, floats):
+    a = (i, l, f)
+    print(a)
+    print(type(a))
+
+
+print([5, 6, 7] < [5])

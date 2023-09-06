@@ -4,13 +4,16 @@ def my_sum(*integers):
         result += x
     return result
 
+
 print(my_sum(1, 2, 3))
+
 
 def concatenate(**words):
     result = ""
     for arg in words.values():
         result += arg
     return result
+
 
 print(concatenate(a="Real", b="Python", c="Is", d="Great", e="!"))
 
@@ -28,6 +31,7 @@ def my_sum(*args):
         result += x
     return result
 
+
 list1 = [1, 2, 3]
 list2 = [4, 5]
 list3 = [6, 7, 8, 9]
@@ -40,4 +44,9 @@ print(my_sum(*tupie))
 print(my_sum(*list3))
 print(my_sum(*boolie))
 
-
+a = [1, 2, 3]
+b = [4, 5, 6]
+c = [*a, *b]
+d = a + b
+print(c)
+print(d)

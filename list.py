@@ -36,3 +36,14 @@ print(x)
 print(x[2:4])
 print(x[2:-1])
 
+
+
+# Replace by index method
+fruits = ["apple", "banana", "orange", "kiwi", "grape"]
+fruits[fruits.index("kiwi")] = "mango"
+print(fruits)
+
+fruits1 = ["apple", "banana"]
+fruits2 = ["orange", "kiwi", "grape"]
+all_fruits = fruits1 + fruits2
+print(all_fruits)
