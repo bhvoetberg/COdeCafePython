@@ -18,6 +18,7 @@ def concatenate(**words):
 print(concatenate(a="Real", b="Python", c="Is", d="Great", e="!"))
 
 my_list = [1, 2, 3]
+print("Mylist")
 print(my_list)
 print(*my_list)
 
@@ -50,3 +51,17 @@ c = [*a, *b]
 d = a + b
 print(c)
 print(d)
+
+
+def combi(*args, **kwargs):
+    print("args: ", args)
+    print("kwargs: ", kwargs)
+    return "Done!"
+
+print("Combi")
+a = [1, 2, 3]
+b = {"a": 1, "b": 2, "c": 3}
+
+q = combi(a)
+w = combi(b)
+e = combi(a, b)

@@ -15,3 +15,7 @@ print(x)
 x = "Word"
 
 print(x)
+
+
+def proces_numbers(numbers: list[int]) -> list[int]:
+    return [number + 1 for number in numbers]
