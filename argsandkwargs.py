@@ -1,3 +1,27 @@
+def sum_dictionary_values(*args, **kwargs):
+    sum = 0
+    if len(args) > 0:
+        for arg in args:
+            if type(arg) in (int, float):
+                sum += arg
+    if len(kwargs) > 0:
+        for key in kwargs:
+            if type(kwargs[key]) in (int, float):
+                sum += kwargs[key]
+    return sum
+
+
+class Dumbo:
+    def __init__(self):
+        a = 'Naam'
+
+
+olifant = Dumbo()
+
+print(sum_dictionary_values(1, 2, olifant, True, True, 'v', 3.5, a=2,
+                            b=3.4, c=5, o={1, 2, 3}, d='d'))
+
+
 def my_sum(*integers):
     result = 0
     for x in integers:
@@ -57,6 +81,7 @@ def combi(*args, **kwargs):
     print("args: ", args)
     print("kwargs: ", kwargs)
     return "Done!"
+
 
 print("Combi")
 a = [1, 2, 3]
