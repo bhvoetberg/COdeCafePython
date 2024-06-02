@@ -2,7 +2,7 @@ class MyQueue:
     def __init__(self):
         self.items = []
 
-    def is_empty(self):
+    def is_empty(self) -> bool:
         return len(self.items) == 0
 
     def enqueue(self, item):
@@ -22,6 +22,7 @@ class MyQueue:
 
 bikes = MyQueue()
 bikes.size()
+# bikes.peek()
 bikes.enqueue('Gazelle')
 bikes.enqueue('Batavus')
 bikes.enqueue('Union')
@@ -36,9 +37,8 @@ print('a: ' + a)
 print('---')
 print(bikes.__dir__())
 
-lijst = [x*2 for x in range(20)]
+lijst = [x * 2 for x in range(20)]
 print(lijst)
-
 
 
 class MyStack:
@@ -60,8 +60,21 @@ class MyStack:
     def peek(self):
         if self.is_empty():
             raise Exception("Empty stack")
-
         return self.stack[len(self.stack) - 1]
 
     def size(self):
         return len(self.stack)
+
+
+print('+++')
+stapel = MyStack()
+print(stapel.size())
+stapel.push("Volvo")
+stapel.push("Toyota")
+stapel.push("Volkswagen")
+
+print(stapel.peek())
+stapel.pop()
+print(stapel.peek())
+
+print('+++')

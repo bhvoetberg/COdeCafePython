@@ -1,9 +1,9 @@
-stopflag = True
+stopflag = 1
 
 
 match stopflag:
     case True:
-        print("Het systeem gaat uit")
+        print("Het systeem gaat aan")
         exit()
     case False:
         print("Het systeem gaat uit")

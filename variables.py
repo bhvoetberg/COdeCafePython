@@ -7,6 +7,8 @@ print("hallo" +str(x))
 
 #Sinds Python 3.8?
 print(f"Hallo {x}")
+# vs
+print("Hallo {x}")
 
 #input is always string
 age = input("What age? ")

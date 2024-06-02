@@ -11,4 +11,4 @@ for t in range(2, 30):
         if lijst[i] % t == 0:
             lijst.pop(i)
         i += 1
-    print(lijst)
+        print(lijst)

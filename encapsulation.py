@@ -17,6 +17,7 @@ class Person:
     @staticmethod
     def mymethod():
         print("mymethod")
+        print(self.__name)
 
     def __repr__(self):
         return f"{self.__name} {self.__age} {self.__gender}"

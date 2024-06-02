@@ -1,16 +1,16 @@
-#List: geordend en veranderlijk
+# List: geordend en veranderlijk
 x = [1, 2, 2, 2, 3, 4]
 tweedelijst = [5, 6, 7]
 
 print(len(x))
 
-#Laatste element
+# Laatste element
 print(x[-1])
 
-#Voorlaatste element
+# Voorlaatste element
 print(x[-2])
 
-x[2]=6
+x[2] = 6
 print(x)
 
 x[0] = tweedelijst
@@ -19,23 +19,29 @@ print(x[0][0])
 
 x.append("Rober")
 print(x)
-x.insert(3,"Mirjam")
+x.insert(3, "Mirjam")
 print(x)
 
 x.pop()
 print(x)
 
-#haalt 1 waarde weg, herhalen indien nodig
+# haalt eerste entry met getal 2 weg, herhalen indien nodig
 x.remove(2)
 print(x)
+
+x.remove([5, 6, 7])
 
 x.extend(tweedelijst)
 print(x)
 
-#print van tot in lijst
+# print van tot in lijst
 print(x[2:4])
 print(x[2:-1])
+# print(x[-1])
+x.remove('Mirjam')
 
+y = x * 3
+print(set(sorted(y)))
 
 
 # Replace by index method

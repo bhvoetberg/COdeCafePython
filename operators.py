@@ -6,4 +6,4 @@ print(a/b )
 print(a//5)
 
 #modulo
-print(9%2)
+print(11%3)
