@@ -49,7 +49,16 @@ fruits = ["apple", "banana", "orange", "kiwi", "grape"]
 fruits[fruits.index("kiwi")] = "mango"
 print(fruits)
 
+# remove and add to front
+index = fruits.index("mango")
+item = fruits.pop(index)
+fruits.insert(0, item)
+print(fruits)
+
 fruits1 = ["apple", "banana"]
 fruits2 = ["orange", "kiwi", "grape"]
 all_fruits = fruits1 + fruits2
 print(all_fruits)
+
+
+print(0.6 + 0.7)
