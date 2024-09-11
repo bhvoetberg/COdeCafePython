@@ -21,11 +21,12 @@ def merge_two_lists(node_l1: Optional[ListNode], node_l2: Optional[ListNode]) ->
             node_l2 = node_l2.next
         head = head.next
 
-        if not node_l1:
-            head.next = node_l2
-        if not node_l2:
+        if node_l1:
             head.next = node_l1
-    return head.next
+        elif node_l2:
+            head.next = node_l2
+
+    return dummy.next
 
 
 def main():
@@ -36,6 +37,10 @@ def main():
     node22 = ListNode(3, node23)
     node21 = ListNode(1, node22)
     dummy = merge_two_lists(node11, node21)
+    while dummy:
+        print("val: ", dummy.val)
+        dummy = dummy.next
+    print("The end")
 
 
 if __name__ == '__main__':
