@@ -14,5 +14,5 @@ def fibonacci_generator(stop):
         yield fib_number
 
 
-print(*fibonacci_generator(100))
+print(*fibonacci_generator(1000))
 

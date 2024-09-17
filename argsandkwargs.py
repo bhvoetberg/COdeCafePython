@@ -22,9 +22,9 @@ print(sum_dictionary_values(1, 2, olifant, True, True, 'v', 3.5, a=2,
                             b=3.4, c=5, o={1, 2, 3}, d='d'))
 
 
-def my_sum(*integers):
+def my_sum(*numbers) -> int:
     result = 0
-    for x in integers:
+    for x in numbers:
         result += x
     return result
 
@@ -65,19 +65,20 @@ print(my_sum(*list1, *list2))
 
 tupie = ('a', 'b', 'c')
 boolie = [False, False, True]
-print(my_sum(*tupie))
-print(my_sum(*list3))
-print(my_sum(*boolie))
+print('tupie', my_sum(*tupie))
+print('list3', my_sum(*list3))
+print('boolie', my_sum(*boolie))
 
 a = [1, 2, 3]
 b = [4, 5, 6]
 c = [*a, *b]
 d = a + b
-print(c)
-print(d)
+print('c: ', c)
+print('d: ', d)
 
 
 def combi(*args, **kwargs):
+    print('This series:')
     print("args: ", args)
     print("kwargs: ", kwargs)
     return "Done!"

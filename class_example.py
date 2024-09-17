@@ -37,9 +37,6 @@ print('a: ' + a)
 print('---')
 print(bikes.__dir__())
 
-lijst = [x * 2 for x in range(20)]
-print(lijst)
-
 
 class MyStack:
     def __init__(self):

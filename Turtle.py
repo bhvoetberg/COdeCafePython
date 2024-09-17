@@ -1,5 +1,5 @@
 import turtle as t
-from random import random
+from random_example import random
 #
 # forward(200)
 # left(120)

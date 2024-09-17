@@ -1,4 +1,4 @@
-import random
+import random_example
 import string
 
 print("hallo", end=" ")

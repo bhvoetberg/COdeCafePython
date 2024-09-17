@@ -1,5 +1,5 @@
 import string
-import random
+import random_example
 
 
 class VehicleInfo:

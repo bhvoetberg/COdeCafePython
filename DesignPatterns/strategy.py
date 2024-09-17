@@ -1,5 +1,5 @@
 import string
-import random
+import random_example
 from typing import List
 from abc import ABC, abstractmethod
 

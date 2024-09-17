@@ -19,11 +19,16 @@ print(ascii_vowels)
 squares = {i: i * i for i in range(10)}
 print(squares)
 
+lijst = [x * 2 for x in range(20)]
+print(lijst)
 
 # walrus operator
-import random
+import random_example
+
+
 def get_weather_data():
     return random.randrange(0, 40)
+
 
 hot_temps = [temp for _ in range(20) if (temp := get_weather_data()) >= 28]
 print(hot_temps)

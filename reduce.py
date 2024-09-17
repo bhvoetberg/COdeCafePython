@@ -6,4 +6,4 @@ def my_add(a, b):
 
 numbers = [1, 2, 3, 4, 5]
 
-print(reduce(my_add, numbers, 100))
+print(reduce(my_add, numbers, 99))
