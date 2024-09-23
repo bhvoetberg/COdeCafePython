@@ -13,7 +13,7 @@ def is_palindrome(word_to_check: str) -> bool:
 def main():
     word_to_check: str = "A man, a plan, a canal: Panama"
     print(is_palindrome(word_to_check))
-    word_to_check: str = "malayalam1"
+    word_to_check: str = "malayalam"
     print(is_palindrome(word_to_check))
 
 if __name__ == '__main__':

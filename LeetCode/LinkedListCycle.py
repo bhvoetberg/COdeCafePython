@@ -27,8 +27,8 @@ def main():
     node13 = ListNode(13, "13", node14)
     node12 = ListNode(12, "12", node13)
     node11 = ListNode(11, "11", node12)
-    # node17.next = node11
-    print(has_cycle(node11))
+    node17.next = node12
+    print(has_cycle(node16))
 
 
 if __name__ == '__main__':
