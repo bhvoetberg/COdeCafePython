@@ -26,6 +26,7 @@ def main():
     g.add_edge(1, 2)
     g.add_edge(2, 3)
     g.add_edge(3, 0)
+
     g.show()
     g.number_of_edges()
 
