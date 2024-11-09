@@ -5,10 +5,11 @@ class MyQueue:
     def is_empty(self) -> bool:
         return len(self.items) == 0
 
-    def enqueue(self, item):
+    def enqueue(self, item) -> None:
         self.items.append(item)
+        return None
 
-    def dequeue(self):
+    def dequeue(self) -> None:
         return self.items.pop(0)
 
     def size(self):

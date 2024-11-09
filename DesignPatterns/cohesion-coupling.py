@@ -1,5 +1,5 @@
 import string
-import random_example
+import random
 
 
 class VehicleInfo:
@@ -74,3 +74,4 @@ class Application:
 
 app = Application()
 app.register_vehicle("Volkswagen ID3")
+app.register_vehicle("Tesla Model 3")

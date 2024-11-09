@@ -6,16 +6,16 @@ class Person:
 
 
     @property
-    def Name(self):
+    def name(self):
         return self.__name
 
-    # Python does not support method overloading, hence @Name.setter
-    @Name.setter
-    def Name(self, value):
+    # Python does not support method overloading, hence @name.setter
+    @name.setter
+    def name(self, value):
         self.__name = value
 
     @staticmethod
-    def mymethod():
+    def mymethod(self: object) -> object:
         print("mymethod")
         print(self.__name)
 
@@ -26,5 +26,5 @@ class Person:
 person = Person('Henk', 4, 'male')
 
 print(person)
-person.Name = 'Frits'
+person.name = 'Frits'
 person.mymethod()

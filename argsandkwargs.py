@@ -18,7 +18,7 @@ class Dumbo:
 
 olifant = Dumbo()
 
-print(sum_dictionary_values(1, 2, olifant, True, True, 'v', 3.5, a=2,
+print("Dumbo example: ", sum_dictionary_values(1, 2, olifant, True, True, 'v', 3.5, a=2,
                             b=3.4, c=5, o={1, 2, 3}, d='d'))
 
 
