@@ -49,7 +49,6 @@ def main():
     islands: Island = Island(size, 0)
     islands.show()
     visited: Grid = Grid(size, False)
-    visited.show()
     print("NoI: ", number_of_islands(islands, visited))
 
 
