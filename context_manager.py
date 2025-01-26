@@ -1,4 +1,6 @@
 import contextlib
+import sqlite3
+import time
 
 file = open("file.txt", "w")
 try:
@@ -59,3 +61,29 @@ def file(filename, method):
 with file("text.txt", "w") as file:
     print("middle")
     file.write("hello")
+
+
+
+@contextlib.contextmanager
+def timer():
+    start_time = time.time()
+    yield
+    end_time = time.time()
+    print(f"Time taken: {end_time - start_time} seconds")
+
+with timer():
+    total = sum(range(10_000_000))
+    print("Total: {total} seconds elapsed")
+
+
+with sqlite3.connect("context_manager_example.db") as conn:
+    cursor = conn.cursor()
+    cursor.execute("CREATE TABLE IF NOT EXISTS people (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT)")
+    cursor.execute("INSERT INTO people (name) VALUES (?)", ("Alice",))
+    cursor.execute("INSERT INTO people (name) VALUES (?)", ("Bob",))
+    conn.commit()
+    cursor.execute("SELECT * FROM people")
+    print(cursor.fetchall())
+    # conn.close() is not necessary in ' with '  context manager!!
+    print("Connection closed automatically at end of block")
+

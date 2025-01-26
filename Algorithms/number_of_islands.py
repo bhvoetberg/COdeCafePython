@@ -45,7 +45,7 @@ def number_of_islands(islands: Island, visited: Grid) -> int:
 
 
 def main():
-    size = 10
+    size = 6
     islands: Island = Island(size, 0)
     islands.show()
     visited: Grid = Grid(size, False)
