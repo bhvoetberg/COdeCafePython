@@ -1,6 +1,6 @@
 import contextlib
 
-file = open("file.txt", "w")
+file = open("context_manager_file.txt", "w")
 try:
     file.write("hello")
 finally:
@@ -8,7 +8,7 @@ finally:
 
 # Is equal to:
 
-with open("file.txt", "w") as file:
+with open("context_manager_file.txt", "w") as file:
     file.write("hello")
 
 
@@ -42,7 +42,7 @@ class Dog:
 dog = Dog("Rufus")
 print(dog.name)
 
-with File("file.txt", "w") as file:
+with File("context_manager_file.txt", "w") as file:
     print("middle")
     file.write("hello")
 
