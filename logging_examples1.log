@@ -1,0 +1,2 @@
+[2025-02-14 11:23:11] {/home/rober/PycharmProjects/PythonCodeExamples/logging_examples1.py:19} ERROR - Error creating directory: /path/to/your/directory, error: [Errno 13] Permission denied: '/path'
+[2025-02-14 11:23:59] {/home/rober/PycharmProjects/PythonCodeExamples/logging_examples1.py:19} ERROR - Error creating directory: /path/to/your/directory, error: [Errno 13] Permission denied: '/path'
