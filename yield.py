@@ -14,5 +14,14 @@ def fibonacci_generator(stop):
         yield fib_number
 
 
-print(*fibonacci_generator(1000))
+print(*fibonacci_generator(10))
+
+
+def square_numbers(quanty: int):
+    for i in range(quanty):
+        yield i ** 2
+
+
+for square in square_numbers(5):
+    print(square)
 

@@ -55,7 +55,7 @@ class ElectricPowerSwitch:
 lampie = LightBulb()
 fanny = Fan()
 lt = Laptop()
-switch = ElectricPowerSwitch(lt)
+switch = ElectricPowerSwitch(lampie)
 switch.press()
 switch.press()
 switch.press()
