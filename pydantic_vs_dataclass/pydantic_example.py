@@ -4,6 +4,19 @@ from pydantic import BaseModel, EmailStr, field_validator
 # "pip install pydantic[email]" required to use EmailStr
 
 
+class TypeHintModel:
+    def __init__(self, name, email, age):
+        self.name: str
+        self.email: str
+        self.age: int
+
+
+strange_tuple: tuple[int, TypeHintModel] = (2, TypeHintModel("name", "email", "age"))
+
+
+
+tuple_ex: tuple[int, ...] = (1, 2, 3)
+
 class User(BaseModel):
     name: str
     email: EmailStr
@@ -19,7 +32,7 @@ class User(BaseModel):
 def main():
     user: User = User(
         name="Rober",
-        email="some@there.com",
+        email = "some@there.com",
         account_id=28
     )
     user_data = {
@@ -34,7 +47,6 @@ def main():
     print(user2.model_dump())
 
     json_string = {"name":"Ben","email":"here@there.com","account_id":30}
-
 
 
 if __name__ == '__main__':

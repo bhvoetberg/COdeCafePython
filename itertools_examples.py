@@ -1,5 +1,5 @@
 from itertools import groupby
-from typing import Any, Iterator
+
 
 numbers: list[list[int]] = [[1], [2,3,4], [5,6], [6,7,8], [9]]
 sorted_numbers: list[list[int]] = sorted(numbers, key=len)
